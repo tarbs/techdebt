@@ -140,7 +140,7 @@ def lambda_handler(event, context):
         json_data = json.dumps(item_data)
         t = datetime.utcnow()
         
-        file_name = product_id + t.strftime('%Y%m%d%H%M%S')
+        file_name = product_id # + t.strftime('%Y%m%d%H%M%S')
 
         if localdbg == 0:
             print(json_data)
