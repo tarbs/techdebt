@@ -3,7 +3,7 @@ import json
 from boto3.dynamodb.conditions import Key, Attr
 from datetime import datetime
 
-localdbg = 1
+localdbg = 0
 
 def lambda_handler(event, context):
     s3 = boto3.resource('s3')
@@ -81,16 +81,10 @@ def lambda_handler(event, context):
 
     print("Processing each item ...")
 
-    # ProductID
-    # InstanceID
-    # LastRecordedDatetime
-    # VersionID
     for i in response['Items']:
-        # print(i['ProductID'], ":", i['VersionID'])
 
         product_id = i['ProductID']
         version_id = i['VersionID']
-        #ref_key = product_id + version_id
 
         try:
             data_item = ref_data[product_id]
