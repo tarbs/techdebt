@@ -7,25 +7,29 @@ import boto3
 tablename = 'TechDebtReference'
 
 testdata = [
-    {'ProductID': 'RDS::MySQL','VersionID': '5.7.61','InceptionDate': '20150101','ExpectedEoLDate': '20160623','ForcedUpgrade': True,'LastRecordedDatetime': '20161208085000','Comments': 'The best'},
-    {'ProductID': 'RDS::MySQL','VersionID': '5.5.40a','InceptionDate': '20120101','ExpectedEoLDate': '20150330','ForcedUpgrade': True,'LastRecordedDatetime': '20161208085000','Comments': "Ooooh, that's old"},
-    {'ProductID': 'RDS::MySQL','VersionID': '5.6.27','InceptionDate': '20140101','ExpectedEoLDate': '20170330','ForcedUpgrade': True,'LastRecordedDatetime': '20161208085000','Comments': "A classic"},
-    {'ProductID': 'RDS::PostgreSQL','VersionID': '9.6.1','InceptionDate': '20130101','ExpectedEoLDate': '20170330','ForcedUpgrade': True,'LastRecordedDatetime': '20161208085000','Comments': " "},
-    {'ProductID': 'RDS::PostgreSQL','VersionID': '9.3.9','InceptionDate': '20130101','ExpectedEoLDate': '20170330','ForcedUpgrade': True,'LastRecordedDatetime': '20161208085000','Comments': " "},
-    {'ProductID': 'RDS::PostgreSQL','VersionID': '9.3.1','InceptionDate': '20130101','ExpectedEoLDate': '20170330','ForcedUpgrade': True,'LastRecordedDatetime': '20161208085000','Comments': " "},
-    {'ProductID': 'RDS::SQLServer::Express','VersionID': '10.50.2789.0.v1','InceptionDate': '20100101','ExpectedEoLDate': '20140330','ForcedUpgrade': True,'LastRecordedDatetime': '20161208085000','Comments': " "},
-    {'ProductID': 'RDS::SQLServer::Express','VersionID': '12.00.4422.0.v1','InceptionDate': '20100101','ExpectedEoLDate': '20140330','ForcedUpgrade': True,'LastRecordedDatetime': '20161208085000','Comments': " "},
-    {'ProductID': 'RDS::SQLServer::Express','VersionID': '12.00.5000.0.v1','InceptionDate': '20100101','ExpectedEoLDate': '20140330','ForcedUpgrade': True,'LastRecordedDatetime': '20161208085000','Comments': " "},
-    {'ProductID': 'Elasticache::Redis','VersionID': '2.6.13','InceptionDate': '20100101','ExpectedEoLDate': '20170330','ForcedUpgrade': True,'LastRecordedDatetime': '20161208085000','Comments': " "},
-    {'ProductID': 'Elasticache::Redis','VersionID': '2.8.19','InceptionDate': '20150101','ExpectedEoLDate': '20170330','ForcedUpgrade': True,'LastRecordedDatetime': '20161208085000','Comments': " "},
-    {'ProductID': 'Elasticache::Redis','VersionID': '2.8.24','InceptionDate': '20140101','ExpectedEoLDate': '20170930','ForcedUpgrade': True,'LastRecordedDatetime': '20161208085000','Comments': " "},
-    {'ProductID': 'Elasticache::Memcached','VersionID': '1.4.14','InceptionDate': '20160101','ExpectedEoLDate': '20170330','ForcedUpgrade': True,'LastRecordedDatetime': '20161208085000','Comments': " "},
-    {'ProductID': 'Elasticache::Memcached','VersionID': '1.4.24','InceptionDate': '20160101','ExpectedEoLDate': '20180330','ForcedUpgrade': True,'LastRecordedDatetime': '20161208085000','Comments': " "},
-    {'ProductID': 'Elasticache::Memcached','VersionID': '1.4.5','InceptionDate': '20160101','ExpectedEoLDate': '20190330','ForcedUpgrade': True,'LastRecordedDatetime': '20161208085000','Comments': " "},
-    {'ProductID': 'Elasticsearch','VersionID': '1.5','InceptionDate': '20150101','ExpectedEoLDate': '20170330','ForcedUpgrade': True,'LastRecordedDatetime': '20161208085000','Comments': " "},
-    {'ProductID': 'Elasticsearch','VersionID': '2.3','InceptionDate': '20160101','ExpectedEoLDate': '20190330','ForcedUpgrade': True,'LastRecordedDatetime': '20161208085000','Comments': " "}
+    {'ProductID': 'RDS::MySQL','VersionID': '5.7.61','InceptionDate': '20150101','ExpectedEoLDate': '20160623','ForcedUpgrade': True,'Comments': 'The best'},
+    {'ProductID': 'RDS::MySQL','VersionID': '5.5.40a','InceptionDate': '20120101','ExpectedEoLDate': '20150330','ForcedUpgrade': True,'Comments': "Ooooh, that's old"},
+    {'ProductID': 'RDS::MySQL','VersionID': '5.6.27','InceptionDate': '20140101','ExpectedEoLDate': '20170330','ForcedUpgrade': True,'Comments': "A classic"},
+    {'ProductID': 'RDS::PostgreSQL','VersionID': '9.6.1','InceptionDate': '20130101','ExpectedEoLDate': '20170330','ForcedUpgrade': True,'Comments': " "},
+    {'ProductID': 'RDS::PostgreSQL','VersionID': '9.3.9','InceptionDate': '20130101','ExpectedEoLDate': '20170330','ForcedUpgrade': True,'Comments': " "},
+    {'ProductID': 'RDS::PostgreSQL','VersionID': '9.3.1','InceptionDate': '20130101','ExpectedEoLDate': '20170330','ForcedUpgrade': True,'Comments': " "},
+    {'ProductID': 'RDS::SQLServer::Express','VersionID': '10.50.2789.0.v1','InceptionDate': '20100101','ExpectedEoLDate': '20140330','ForcedUpgrade': True,'Comments': " "},
+    {'ProductID': 'RDS::SQLServer::Express','VersionID': '12.00.4422.0.v1','InceptionDate': '20100101','ExpectedEoLDate': '20140330','ForcedUpgrade': True,'Comments': " "},
+    {'ProductID': 'RDS::SQLServer::Express','VersionID': '12.00.5000.0.v1','InceptionDate': '20100101','ExpectedEoLDate': '20140330','ForcedUpgrade': True,'Comments': " "},
+    {'ProductID': 'Elasticache::Redis','VersionID': '2.6.13','InceptionDate': '20100101','ExpectedEoLDate': '20170330','ForcedUpgrade': True,'Comments': " "},
+    {'ProductID': 'Elasticache::Redis','VersionID': '2.8.19','InceptionDate': '20150101','ExpectedEoLDate': '20170330','ForcedUpgrade': True,'Comments': " "},
+    {'ProductID': 'Elasticache::Redis','VersionID': '2.8.24','InceptionDate': '20140101','ExpectedEoLDate': '20170930','ForcedUpgrade': True,'Comments': " "},
+    {'ProductID': 'Elasticache::Memcached','VersionID': '1.4.14','InceptionDate': '20160101','ExpectedEoLDate': '20170330','ForcedUpgrade': True,'Comments': " "},
+    {'ProductID': 'Elasticache::Memcached','VersionID': '1.4.24','InceptionDate': '20160101','ExpectedEoLDate': '20180330','ForcedUpgrade': True,'Comments': " "},
+    {'ProductID': 'Elasticache::Memcached','VersionID': '1.4.5','InceptionDate': '20160101','ExpectedEoLDate': '20190330','ForcedUpgrade': True,'Comments': " "},
+    {'ProductID': 'Elasticsearch','VersionID': '1.5','InceptionDate': '20150101','ExpectedEoLDate': '20170330','ForcedUpgrade': True,'Comments': " "},
+    {'ProductID': 'Elasticsearch','VersionID': '2.3','InceptionDate': '20160101','ExpectedEoLDate': '20190330','ForcedUpgrade': True,'Comments': " "},
+    {'ProductID': 'ElasticMapReduce::Amazon','VersionID': 'emr-4.0.0','InceptionDate': '20120101','ExpectedEoLDate': '20170130','ForcedUpgrade': True,'Comments': " "},
+    {'ProductID': 'ElasticMapReduce::Amazon','VersionID': 'emr-4.1.0','InceptionDate': '20120101','ExpectedEoLDate': '20170130','ForcedUpgrade': True,'Comments': " "},
+    {'ProductID': 'ElasticMapReduce::Amazon','VersionID': 'emr-4.5.0','InceptionDate': '20120101','ExpectedEoLDate': '20170130','ForcedUpgrade': True,'Comments': " "},
+    {'ProductID': 'ElasticMapReduce::Amazon','VersionID': 'emr-4.8.0','InceptionDate': '20120101','ExpectedEoLDate': '20170130','ForcedUpgrade': True,'Comments': " "},
+    {'ProductID': 'ElasticMapReduce::Amazon','VersionID': 'emr-5.2.0','InceptionDate': '20120101','ExpectedEoLDate': '20170130','ForcedUpgrade': True,'Comments': " "}
 ]
-
 dynamodb = boto3.resource('dynamodb')
 
 table = dynamodb.Table(tablename)

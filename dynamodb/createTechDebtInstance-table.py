@@ -115,10 +115,26 @@ testdata = [
     {'ProductID': 'Elasticsearch','InstanceID': 'andytest-Elasticsearch-instance-6','VersionID': '2.3','LastRecordedDatetime': '20161207085000'},
     {'ProductID': 'Elasticsearch','InstanceID': 'andytest-Elasticsearch-instance-7','VersionID': '2.3','LastRecordedDatetime': '20161207085000'},
     {'ProductID': 'Elasticsearch','InstanceID': 'andytest-Elasticsearch-instance-8','VersionID': '2.3','LastRecordedDatetime': '20161207085000'},
-    {'ProductID': 'Elasticsearch','InstanceID': 'andytest-Elasticsearch-instance-9','VersionID': '2.3','LastRecordedDatetime': '20161207085000'}
-
-
-
+    {'ProductID': 'Elasticsearch','InstanceID': 'andytest-Elasticsearch-instance-9','VersionID': '2.3','LastRecordedDatetime': '20161207085000'},
+    {'ProductID': 'ElasticMapReduce::Amazon','InstanceID': 'andytest-EMR-instance-1','VersionID': 'emr-4.0.0','LastRecordedDatetime': '20161207085000'},
+    {'ProductID': 'ElasticMapReduce::Amazon','InstanceID': 'andytest-EMR-instance-2','VersionID': 'emr-4.1.0','LastRecordedDatetime': '20161207085000'},
+    {'ProductID': 'ElasticMapReduce::Amazon','InstanceID': 'andytest-EMR-instance-3','VersionID': 'emr-4.1.0','LastRecordedDatetime': '20161207085000'},
+    {'ProductID': 'ElasticMapReduce::Amazon','InstanceID': 'andytest-EMR-instance-4','VersionID': 'emr-4.5.0','LastRecordedDatetime': '20161207085000'},
+    {'ProductID': 'ElasticMapReduce::Amazon','InstanceID': 'andytest-EMR-instance-5','VersionID': 'emr-4.5.0','LastRecordedDatetime': '20161207085000'},
+    {'ProductID': 'ElasticMapReduce::Amazon','InstanceID': 'andytest-EMR-instance-6','VersionID': 'emr-4.5.0','LastRecordedDatetime': '20161207085000'},
+    {'ProductID': 'ElasticMapReduce::Amazon','InstanceID': 'andytest-EMR-instance-7','VersionID': 'emr-4.5.0','LastRecordedDatetime': '20161207085000'},
+    {'ProductID': 'ElasticMapReduce::Amazon','InstanceID': 'andytest-EMR-instance-8','VersionID': 'emr-4.5.0','LastRecordedDatetime': '20161207085000'},
+    {'ProductID': 'ElasticMapReduce::Amazon','InstanceID': 'andytest-EMR-instance-9','VersionID': 'emr-4.580','LastRecordedDatetime': '20161207085000'},
+    {'ProductID': 'ElasticMapReduce::Amazon','InstanceID': 'andytest-EMR-instance-10','VersionID': 'emr-4.8.0','LastRecordedDatetime': '20161207085000'},
+    {'ProductID': 'ElasticMapReduce::Amazon','InstanceID': 'andytest-EMR-instance-11','VersionID': 'emr-4.8.0','LastRecordedDatetime': '20161207085000'},
+    {'ProductID': 'ElasticMapReduce::Amazon','InstanceID': 'andytest-EMR-instance-12','VersionID': 'emr-4.8.0','LastRecordedDatetime': '20161207085000'},
+    {'ProductID': 'ElasticMapReduce::Amazon','InstanceID': 'andytest-EMR-instance-13','VersionID': 'emr-4.8.0','LastRecordedDatetime': '20161207085000'},
+    {'ProductID': 'ElasticMapReduce::Amazon','InstanceID': 'andytest-EMR-instance-14','VersionID': 'emr-4.8.0','LastRecordedDatetime': '20161207085000'},
+    {'ProductID': 'ElasticMapReduce::Amazon','InstanceID': 'andytest-EMR-instance-15','VersionID': 'emr-5.2.0','LastRecordedDatetime': '20161207085000'},
+    {'ProductID': 'ElasticMapReduce::Amazon','InstanceID': 'andytest-EMR-instance-16','VersionID': 'emr-5.2.0','LastRecordedDatetime': '20161207085000'},
+    {'ProductID': 'ElasticMapReduce::Amazon','InstanceID': 'andytest-EMR-instance-17','VersionID': 'emr-5.2.0','LastRecordedDatetime': '20161207085000'},
+    {'ProductID': 'ElasticMapReduce::Amazon','InstanceID': 'andytest-EMR-instance-18','VersionID': 'emr-5.2.0','LastRecordedDatetime': '20161207085000'},
+    {'ProductID': 'ElasticMapReduce::Amazon','InstanceID': 'andytest-EMR-instance-19','VersionID': 'emr-5.2.0','LastRecordedDatetime': '20161207085000'}
 ]
 
 dynamodb = boto3.resource('dynamodb')
