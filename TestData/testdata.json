@@ -1,0 +1,62 @@
+[
+    {
+        'DaysToEoL': 10,
+        'InstanceCount': 4,
+        'Label': 'Version 1'
+    },
+    {
+        'DaysToEoL': 25,
+        'InstanceCount': 8,
+        'Label': 'Version 2'
+    },
+    {
+        'DaysToEoL': 50,
+        'InstanceCount': 7,
+        'Label': 'Version 3'
+    },
+    {
+        'DaysToEoL': 75,
+        'InstanceCount': 4,
+        'Label': 'Version 4'
+    },
+    {
+        'DaysToEoL': 80,
+        'InstanceCount': 1,
+        'Label': 'Version 5'
+    },
+    {
+        'DaysToEoL': 100,
+        'InstanceCount': 9,
+        'Label': 'Version 6'
+    },
+    {
+        'DaysToEoL': 125,
+        'InstanceCount': 14,
+        'Label': 'Version 7'
+    },
+    {
+        'DaysToEoL': 145,
+        'InstanceCount': 23,
+        'Label': 'Version 8'
+    },
+    {
+        'DaysToEoL': 180,
+        'InstanceCount': 39,
+        'Label': 'Version 9'
+    },
+    {
+        'DaysToEoL': 210,
+        'InstanceCount': 13,
+        'Label': 'Version '
+    },
+    {
+        'DaysToEoL': 240,
+        'InstanceCount': 6,
+        'Label': 'Version '
+    },
+    {
+        'DaysToEoL': 270,
+        'InstanceCount': 1,
+        'Label': 'Version '
+    }
+]
