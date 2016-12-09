@@ -1,6 +1,8 @@
 import boto3
 import json
 
+# demonstrator function to write the contents of a json object array into a bytearray and upload to s3
+
 def lambda_handler(event, context):
 
     testdata = [
