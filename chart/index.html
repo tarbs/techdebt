@@ -1,0 +1,17 @@
+
+			<canvas id="canvas" height="480" width="640"></canvas>
+			<script>
+				var chart_datacanvas = 
+				{
+					labels: [1206, 110, -255, -621, -255],
+					datasets: [{'pointHighlightFill': 'rgba(250,250,250,1)', 'fillColor': 'rgba(151,187,205,0.5)', 'highlightFill': 'rgba(151,187,205,0.75)', 'pointColor': 'rgba(220,220,220,1)', 'strokeColor': 'rgba(151,187,205,0.8)', 'highlightStroke': 'rgba(151,187,205,1)', 'data': [20, 13, 23, 17, 16], 'pointHighlightStroke': 'rgba(220,220,220,1)', 'pointStrokeColor': 'rgba(250,250,250,1)'}]
+				}
+			</script>
+			<script>
+				window.onload = function()
+				{{
+					var ctx = document.getElementById("canvas").getContext("2d");
+					var mychart = new Chart(ctx).Bar(chart_datacanvas, {responsive: true, barValueSpacing: 5, scaleShowGridLines: true, scaleBeginAtZero: false});
+				}}
+			</script>
+
