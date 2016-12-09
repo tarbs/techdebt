@@ -1,0 +1,206 @@
+{
+    "Linux::httpd2.2.0": {
+        "VersionID": "2.2.0",
+        "ExpectedEoLDays": -255,
+        "ProductCount": 30,
+        "ProductID": "Linux::httpd"
+    },
+    "ElasticMapReduce::Amazonemr-4.8.0": {
+        "VersionID": "emr-4.8.0",
+        "ExpectedEoLDays": 51,
+        "ProductCount": 5,
+        "ProductID": "ElasticMapReduce::Amazon"
+    },
+    "RDS::SQLServer::Express10.5.2789.0.v1": {
+        "VersionID": "10.5.2789.0.v1",
+        "ExpectedEoLDays": -986,
+        "ProductCount": 0,
+        "ProductID": "RDS::SQLServer::Express"
+    },
+    "Elasticache::Memcached1.4.14": {
+        "VersionID": "1.4.14",
+        "ExpectedEoLDays": 110,
+        "ProductCount": 5,
+        "ProductID": "Elasticache::Memcached"
+    },
+    "RDS::PostgreSQL9.3.9": {
+        "VersionID": "9.3.9",
+        "ExpectedEoLDays": 110,
+        "ProductCount": 4,
+        "ProductID": "RDS::PostgreSQL"
+    },
+    "RDS::PostgreSQL9.3.1": {
+        "VersionID": "9.3.1",
+        "ExpectedEoLDays": 110,
+        "ProductCount": 8,
+        "ProductID": "RDS::PostgreSQL"
+    },
+    "Linux::JBoss7.0": {
+        "VersionID": "7.0",
+        "ExpectedEoLDays": 1206,
+        "ProductCount": 20,
+        "ProductID": "Linux::JBoss"
+    },
+    "Linux::JBoss6.0": {
+        "VersionID": "6.0",
+        "ExpectedEoLDays": 110,
+        "ProductCount": 13,
+        "ProductID": "Linux::JBoss"
+    },
+    "RDS::SQLServer::Express12.00.5000.0.v1": {
+        "VersionID": "12.00.5000.0.v1",
+        "ExpectedEoLDays": -986,
+        "ProductCount": 1,
+        "ProductID": "RDS::SQLServer::Express"
+    },
+    "Elasticache::Memcached1.4.5": {
+        "VersionID": "1.4.5",
+        "ExpectedEoLDays": 840,
+        "ProductCount": 17,
+        "ProductID": "Elasticache::Memcached"
+    },
+    "Elasticache::Redis2.8.24": {
+        "VersionID": "2.8.24",
+        "ExpectedEoLDays": 294,
+        "ProductCount": 1,
+        "ProductID": "Elasticache::Redis"
+    },
+    "Elasticache::Redis3.2.4": {
+        "VersionID": "3.2.4",
+        "ExpectedEoLDays": 294,
+        "ProductCount": 4,
+        "ProductID": "Elasticache::Redis"
+    },
+    "Linux::httpd2.4.23-5": {
+        "VersionID": "2.4.23-5",
+        "ExpectedEoLDays": -986,
+        "ProductCount": 34,
+        "ProductID": "Linux::httpd"
+    },
+    "Elasticache::Memcached1.4.24": {
+        "VersionID": "1.4.24",
+        "ExpectedEoLDays": 475,
+        "ProductCount": 7,
+        "ProductID": "Elasticache::Memcached"
+    },
+    "RDS::MySQL5.5.40a": {
+        "VersionID": "5.5.40a",
+        "ExpectedEoLDays": -621,
+        "ProductCount": 7,
+        "ProductID": "RDS::MySQL"
+    },
+    "ElasticMapReduce::Amazonemr-5.2.0": {
+        "VersionID": "emr-5.2.0",
+        "ExpectedEoLDays": 51,
+        "ProductCount": 5,
+        "ProductID": "ElasticMapReduce::Amazon"
+    },
+    "RDS::SQLServer::Express12.00.4422.0.v1": {
+        "VersionID": "12.00.4422.0.v1",
+        "ExpectedEoLDays": -986,
+        "ProductCount": 13,
+        "ProductID": "RDS::SQLServer::Express"
+    },
+    "ElasticMapReduce::Amazonemr-4.5.0": {
+        "VersionID": "emr-4.5.0",
+        "ExpectedEoLDays": 51,
+        "ProductCount": 6,
+        "ProductID": "ElasticMapReduce::Amazon"
+    },
+    "RDS::SQLServer::Express13.00.2164.0.v1": {
+        "VersionID": "13.00.2164.0.v1",
+        "ExpectedEoLDays": -986,
+        "ProductCount": 1,
+        "ProductID": "RDS::SQLServer::Express"
+    },
+    "Elasticache::Redis2.6.13": {
+        "VersionID": "2.6.13",
+        "ExpectedEoLDays": 110,
+        "ProductCount": 2,
+        "ProductID": "Elasticache::Redis"
+    },
+    "RDS::MySQL5.7.61": {
+        "VersionID": "5.7.61",
+        "ExpectedEoLDays": -170,
+        "ProductCount": 2,
+        "ProductID": "RDS::MySQL"
+    },
+    "RDS::SQLServer::Express10.50.2789.0.v1": {
+        "VersionID": "10.50.2789.0.v1",
+        "ExpectedEoLDays": -986,
+        "ProductCount": 11,
+        "ProductID": "RDS::SQLServer::Express"
+    },
+    "Linux::httpd2.1.10-2": {
+        "VersionID": "2.1.10-2",
+        "ExpectedEoLDays": -621,
+        "ProductCount": 0,
+        "ProductID": "Linux::httpd"
+    },
+    "Elasticsearch1.5": {
+        "VersionID": "1.5",
+        "ExpectedEoLDays": 110,
+        "ProductCount": 3,
+        "ProductID": "Elasticsearch"
+    },
+    "RDS::MySQL5.6.27": {
+        "VersionID": "5.6.27",
+        "ExpectedEoLDays": 110,
+        "ProductCount": 11,
+        "ProductID": "RDS::MySQL"
+    },
+    "RDS::PostgreSQL9.6.1": {
+        "VersionID": "9.6.1",
+        "ExpectedEoLDays": 110,
+        "ProductCount": 3,
+        "ProductID": "RDS::PostgreSQL"
+    },
+    "Elasticsearch2.3": {
+        "VersionID": "2.3",
+        "ExpectedEoLDays": 840,
+        "ProductCount": 6,
+        "ProductID": "Elasticsearch"
+    },
+    "Elasticache::Redis2.8.19": {
+        "VersionID": "2.8.19",
+        "ExpectedEoLDays": 110,
+        "ProductCount": 2,
+        "ProductID": "Elasticache::Redis"
+    },
+    "Linux::httpd2.3.20-1": {
+        "VersionID": "2.3.20-1",
+        "ExpectedEoLDays": 110,
+        "ProductCount": 25,
+        "ProductID": "Linux::httpd"
+    },
+    "ElasticMapReduce::Amazonemr-4.1.0": {
+        "VersionID": "emr-4.1.0",
+        "ExpectedEoLDays": 51,
+        "ProductCount": 2,
+        "ProductID": "ElasticMapReduce::Amazon"
+    },
+    "Linux::JBoss5.0": {
+        "VersionID": "5.0",
+        "ExpectedEoLDays": -255,
+        "ProductCount": 23,
+        "ProductID": "Linux::JBoss"
+    },
+    "ElasticMapReduce::Amazonemr-4.0.0": {
+        "VersionID": "emr-4.0.0",
+        "ExpectedEoLDays": 51,
+        "ProductCount": 1,
+        "ProductID": "ElasticMapReduce::Amazon"
+    },
+    "Linux::JBoss4.2": {
+        "VersionID": "4.2",
+        "ExpectedEoLDays": -621,
+        "ProductCount": 17,
+        "ProductID": "Linux::JBoss"
+    },
+    "Linux::JBoss4.3": {
+        "VersionID": "4.3",
+        "ExpectedEoLDays": -255,
+        "ProductCount": 16,
+        "ProductID": "Linux::JBoss"
+    }
+}
