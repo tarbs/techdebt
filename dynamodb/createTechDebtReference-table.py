@@ -9,9 +9,12 @@ tablename = 'TechDebtReference'
 testdata = [
     {
         'ProductID': 'RDS::MySQL',
-        'InstanceID': 'andytest-MySQL-instance-1',
         'VersionID': '5.7.61',
-        'LastRecordedDatetime': '20161208085000'
+        'InceptionDate': '20130101',
+        'ExpectedEoLDate': '20170330',
+        'ForcedUpgrade': True,
+        'LastRecordedDatetime': '20161208085000',
+        'Comments': 'This is a classic'
     }
 ]
 
