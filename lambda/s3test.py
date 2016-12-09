@@ -3,7 +3,7 @@ import json
 
 def lambda_handler(event, context):
 
-    testdata [
+    testdata = [
         'a': 'aaa',
         'b': 'bbb',
         'c': 'ccc',
