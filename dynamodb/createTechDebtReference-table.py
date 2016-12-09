@@ -19,6 +19,7 @@ testdata = [
     {'ProductID': 'Elasticache::Redis','VersionID': '2.6.13','InceptionDate': '20100101','ExpectedEoLDate': '20170330','ForcedUpgrade': True,'Comments': " "},
     {'ProductID': 'Elasticache::Redis','VersionID': '2.8.19','InceptionDate': '20150101','ExpectedEoLDate': '20170330','ForcedUpgrade': True,'Comments': " "},
     {'ProductID': 'Elasticache::Redis','VersionID': '2.8.24','InceptionDate': '20140101','ExpectedEoLDate': '20170930','ForcedUpgrade': True,'Comments': " "},
+    {'ProductID': 'Elasticache::Redis','VersionID': '3.2.4','InceptionDate': '20140101','ExpectedEoLDate': '20170930','ForcedUpgrade': True,'Comments': " "},
     {'ProductID': 'Elasticache::Memcached','VersionID': '1.4.14','InceptionDate': '20160101','ExpectedEoLDate': '20170330','ForcedUpgrade': True,'Comments': " "},
     {'ProductID': 'Elasticache::Memcached','VersionID': '1.4.24','InceptionDate': '20160101','ExpectedEoLDate': '20180330','ForcedUpgrade': True,'Comments': " "},
     {'ProductID': 'Elasticache::Memcached','VersionID': '1.4.5','InceptionDate': '20160101','ExpectedEoLDate': '20190330','ForcedUpgrade': True,'Comments': " "},
