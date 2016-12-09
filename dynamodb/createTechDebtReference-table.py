@@ -21,7 +21,9 @@ testdata = [
     {'ProductID': 'Elasticache::Redis','VersionID': '2.8.24','InceptionDate': '20140101','ExpectedEoLDate': '20170930','ForcedUpgrade': True,'LastRecordedDatetime': '20161208085000','Comments': " "},
     {'ProductID': 'Elasticache::Memcached','VersionID': '1.4.14','InceptionDate': '20160101','ExpectedEoLDate': '20170330','ForcedUpgrade': True,'LastRecordedDatetime': '20161208085000','Comments': " "},
     {'ProductID': 'Elasticache::Memcached','VersionID': '1.4.24','InceptionDate': '20160101','ExpectedEoLDate': '20180330','ForcedUpgrade': True,'LastRecordedDatetime': '20161208085000','Comments': " "},
-    {'ProductID': 'Elasticache::Memcached','VersionID': '1.4.5','InceptionDate': '20160101','ExpectedEoLDate': '20190330','ForcedUpgrade': True,'LastRecordedDatetime': '20161208085000','Comments': " "}
+    {'ProductID': 'Elasticache::Memcached','VersionID': '1.4.5','InceptionDate': '20160101','ExpectedEoLDate': '20190330','ForcedUpgrade': True,'LastRecordedDatetime': '20161208085000','Comments': " "},
+    {'ProductID': 'Elasticsearch','VersionID': '1.5','InceptionDate': '20150101','ExpectedEoLDate': '20170330','ForcedUpgrade': True,'LastRecordedDatetime': '20161208085000','Comments': " "},
+    {'ProductID': 'Elasticsearch','VersionID': '2.3','InceptionDate': '20160101','ExpectedEoLDate': '20190330','ForcedUpgrade': True,'LastRecordedDatetime': '20161208085000','Comments': " "}
 ]
 
 dynamodb = boto3.resource('dynamodb')

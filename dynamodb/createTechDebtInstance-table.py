@@ -106,7 +106,16 @@ testdata = [
     {'ProductID': 'Elasticache::Memcached','InstanceID': 'andytest-ElasticacheMemcached-instance-26','VersionID': '1.4.5','LastRecordedDatetime': '20161207085000'},
     {'ProductID': 'Elasticache::Memcached','InstanceID': 'andytest-ElasticacheMemcached-instance-27','VersionID': '1.4.5','LastRecordedDatetime': '20161207085000'},
     {'ProductID': 'Elasticache::Memcached','InstanceID': 'andytest-ElasticacheMemcached-instance-28','VersionID': '1.4.5','LastRecordedDatetime': '20161207085000'},
-    {'ProductID': 'Elasticache::Memcached','InstanceID': 'andytest-ElasticacheMemcached-instance-29','VersionID': '1.4.5','LastRecordedDatetime': '20161207085000'}
+    {'ProductID': 'Elasticache::Memcached','InstanceID': 'andytest-ElasticacheMemcached-instance-29','VersionID': '1.4.5','LastRecordedDatetime': '20161207085000'},
+    {'ProductID': 'Elasticsearch','InstanceID': 'andytest-Elasticsearch-instance-1','VersionID': '1.5','LastRecordedDatetime': '20161207085000'},
+    {'ProductID': 'Elasticsearch','InstanceID': 'andytest-Elasticsearch-instance-2','VersionID': '1.5','LastRecordedDatetime': '20161207085000'},
+    {'ProductID': 'Elasticsearch','InstanceID': 'andytest-Elasticsearch-instance-3','VersionID': '1.5','LastRecordedDatetime': '20161207085000'},
+    {'ProductID': 'Elasticsearch','InstanceID': 'andytest-Elasticsearch-instance-4','VersionID': '2.3','LastRecordedDatetime': '20161207085000'},
+    {'ProductID': 'Elasticsearch','InstanceID': 'andytest-Elasticsearch-instance-5','VersionID': '2.3','LastRecordedDatetime': '20161207085000'},
+    {'ProductID': 'Elasticsearch','InstanceID': 'andytest-Elasticsearch-instance-6','VersionID': '2.3','LastRecordedDatetime': '20161207085000'},
+    {'ProductID': 'Elasticsearch','InstanceID': 'andytest-Elasticsearch-instance-7','VersionID': '2.3','LastRecordedDatetime': '20161207085000'},
+    {'ProductID': 'Elasticsearch','InstanceID': 'andytest-Elasticsearch-instance-8','VersionID': '2.3','LastRecordedDatetime': '20161207085000'},
+    {'ProductID': 'Elasticsearch','InstanceID': 'andytest-Elasticsearch-instance-9','VersionID': '2.3','LastRecordedDatetime': '20161207085000'}
 
 
 
