@@ -1,0 +1,24 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "dynamodb:DescribeTable",
+                "dynamodb:Query",
+                "dynamodb:Scan"
+            ],
+            "Resource": "arn:aws:dynamodb:eu-west-1:331404947499:table/*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "s3:*",
+                "s3:PutObject"
+            ],
+            "Resource": [
+                "arn:aws:s3:::techdebt-jsonoutput/*"
+            ]
+        }
+    ]
+}

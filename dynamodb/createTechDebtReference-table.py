@@ -7,12 +7,13 @@ import boto3
 tablename = 'TechDebtReference'
 
 testdata = [
-    {'ProductID': 'RDS::MySQL','VersionID': '5.7.61','InceptionDate': '20150101','ExpectedEoLDate': '20160623','ForcedUpgrade': True,'Comments': 'The best'},
-    {'ProductID': 'RDS::MySQL','VersionID': '5.5.40a','InceptionDate': '20120101','ExpectedEoLDate': '20150330','ForcedUpgrade': True,'Comments': "Ooooh, that's old"},
-    {'ProductID': 'RDS::MySQL','VersionID': '5.6.27','InceptionDate': '20140101','ExpectedEoLDate': '20170330','ForcedUpgrade': True,'Comments': "A classic"},
-    {'ProductID': 'RDS::PostgreSQL','VersionID': '9.6.1','InceptionDate': '20130101','ExpectedEoLDate': '20170330','ForcedUpgrade': True,'Comments': " "},
-    {'ProductID': 'RDS::PostgreSQL','VersionID': '9.3.9','InceptionDate': '20130101','ExpectedEoLDate': '20170330','ForcedUpgrade': True,'Comments': " "},
-    {'ProductID': 'RDS::PostgreSQL','VersionID': '9.3.1','InceptionDate': '20130101','ExpectedEoLDate': '20170330','ForcedUpgrade': True,'Comments': " "},
+    {'ProductID': 'RDS::mysql','VersionID': '5.5.40a','InceptionDate': '20120101','ExpectedEoLDate': '20150330','ForcedUpgrade': True,'Comments': "Ooooh, that's old"},
+    {'ProductID': 'RDS::mysql','VersionID': '5.6.16','InceptionDate': '20140101','ExpectedEoLDate': '20170330','ForcedUpgrade': True,'Comments': "so so"},
+    {'ProductID': 'RDS::mysql','VersionID': '5.6.27','InceptionDate': '20140101','ExpectedEoLDate': '20170330','ForcedUpgrade': True,'Comments': "A classic"},
+    {'ProductID': 'RDS::mysql','VersionID': '5.7.61','InceptionDate': '20150101','ExpectedEoLDate': '20160623','ForcedUpgrade': True,'Comments': 'The best'},
+    {'ProductID': 'RDS::postgresql','VersionID': '9.6.1','InceptionDate': '20130101','ExpectedEoLDate': '20170330','ForcedUpgrade': True,'Comments': " "},
+    {'ProductID': 'RDS::postgresql','VersionID': '9.3.9','InceptionDate': '20130101','ExpectedEoLDate': '20170330','ForcedUpgrade': True,'Comments': " "},
+    {'ProductID': 'RDS::postgresql','VersionID': '9.3.1','InceptionDate': '20130101','ExpectedEoLDate': '20170330','ForcedUpgrade': True,'Comments': " "},
     {'ProductID': 'RDS::SQLServer::Express','VersionID': '10.50.2789.0.v1','InceptionDate': '20100101','ExpectedEoLDate': '20140330','ForcedUpgrade': True,'Comments': " "},
     {'ProductID': 'RDS::SQLServer::Express','VersionID': '12.00.4422.0.v1','InceptionDate': '20100101','ExpectedEoLDate': '20140330','ForcedUpgrade': True,'Comments': " "},
     {'ProductID': 'RDS::SQLServer::Express','VersionID': '12.00.5000.0.v1','InceptionDate': '20100101','ExpectedEoLDate': '20140330','ForcedUpgrade': True,'Comments': " "},
