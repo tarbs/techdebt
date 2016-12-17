@@ -1,5 +1,5 @@
 
-# Survey the current AWS account for running RDS instances and log the details into DynamoDB
+# Survey the current AWS account for running Elasticache clusters and log the details into DynamoDB
 
 import boto3
 from boto3.dynamodb.conditions import Key, Attr
@@ -13,36 +13,37 @@ def lambda_handler(event, context):
     tablename = 'TechDebtInstance'
     dateFormat = "%Y%m%d%H%M%S"
     dateStamp = datetime.utcnow().strftime(dateFormat)
+    baseProductName = 'Elasticache::'
+    productName = ''
 
     # Connect to AWS account via boto
-    rds = boto3.client('rds')
+    elasticache = boto3.client('elasticache')
     dynamodb = boto3.resource('dynamodb')
 
     table = dynamodb.Table(tablename)
-    rdsInstances = rds.describe_db_instances()
+    clusters = elasticache.describe_cache_clusters()
 
     # extract the instance details and write to the table 
 
-    for instance in rdsInstances['DBInstances']:
+    for instance in clusters['CacheClusters']:
 
-        productName = 'RDS::' + instance['Engine']
+        productName = baseProductName + instance['Engine']
         instanceItem = {
             'ProductID': productName,
-            'InstanceID': instance['DBInstanceIdentifier'],
+            'InstanceID': instance['CacheClusterId'],
             'VersionID': instance['EngineVersion'],
             'LastRecordedDatetime': dateStamp
         }
         # print(json.dumps(instanceItem))
 
-        print('Adding ' + productName + '::' + instance['DBInstanceIdentifier'] )
+        print('Adding ' + productName + '::' + instance['CacheClusterId'] )
 
         returnval = table.put_item(
             Item=instanceItem
         )
 
 
-    # Find all RDS instances that were not modified today
-
+    # Find all Elasticache instances that were not modified today
 
     instancesToDelete = table.scan(
         ProjectionExpression="ProductID, InstanceID",
@@ -53,13 +54,14 @@ def lambda_handler(event, context):
         }
     )
 
+#    print(json.dumps(instancesToDelete,indent=4))
 
     for instance in instancesToDelete['Items']:
 
-        print('Deleting ' + productName + '::' + instance['InstanceID'])
+        print('Deleting ' + instance['ProductID'] + '::' + instance['InstanceID'])
         table.delete_item(
             Key={
-                'ProductID': productName,
+                'ProductID': instance['ProductID'],
                 'InstanceID': instance['InstanceID']
             }
         )
